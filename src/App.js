@@ -1,8 +1,10 @@
 import React from "react";
-import { Switch, Route, Redirect } from "react-router-dom";
-import { connect } from "react-redux";
+import { Switch, Route } from "react-router-dom";
 
-import "./App.css";
+import WelcomePage from "./pages/welcome/welcome.component";
+import ShoppingPage from "./pages/shopping/shopping.component";
+
+import Header from "./components/header/header.component";
 
 class App extends React.Component {
   componentDidMount() {
@@ -10,7 +12,15 @@ class App extends React.Component {
   }
 
   render() {
-    return <div>Hello!</div>;
+    return (
+      <div>
+        <Header />
+        <Switch>
+          <Route exact path="/" component={WelcomePage} />
+          <Route path="/shopping" component={ShoppingPage} />
+        </Switch>
+      </div>
+    );
   }
 }
 

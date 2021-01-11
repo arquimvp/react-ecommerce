@@ -1,11 +1,7 @@
-html {
+body {
   background: linear-gradient(rgba(255,255,255,.6), rgba(255,255,255,.6)), url(./assets/minimal-shopping.webp);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
-
-h1 {
-  text-align:center;
 }

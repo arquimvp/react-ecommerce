@@ -73,7 +73,7 @@ module.exports = {
         },
       ],
     }),
-    new MinifyPlugin(),
+    
     new CleanWebpackPlugin(),
   ],
 };
