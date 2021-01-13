@@ -14,20 +14,11 @@ export const getProducts = () => {
         type: ProductsActionTypes.GET_PRODUCTS,
         payload: response.data.data.products,
       });
-      myApi.createEntity({ name: "reloj" });
-      myApi.endpoints.reloj.getOne({id:1}).then((response) => {
-        dispatch({
-          type: ProductsActionTypes.GET_PRODUCTS,
-          payload: response.data.data.products,
-        });
-        myApi.createEntity({ name: "videojuego" });
-        myApi.endpoints.videojuego.getOne({id:1}).then((response) => {
-          dispatch({
-            type: ProductsActionTypes.GET_PRODUCTS,
-            payload: response.data.data.products,
-          });
-        });
-      });
     });
   };
 };
+
+export const removeProductFromProducts = (product) => ({
+  type: ProductsActionTypes.REMOVE_PRODUCT_FROM_PRODUCTS,
+  payload: product,
+});

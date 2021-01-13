@@ -1,7 +1,11 @@
 body {
-  background: linear-gradient(rgba(255,255,255,.6), rgba(255,255,255,.6)), url(./assets/minimal-shopping.webp);
+  background: linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.9)), url(./assets/minimal-shopping.webp);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+* {
+  box-sizing: border-box;
 }

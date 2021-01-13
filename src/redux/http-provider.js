@@ -5,9 +5,8 @@ function kebabCaseToCamel(str) {
 }
 
 /*
-  This class allows us to centralize the api calls
+  This class allows us to centralize the api calls via HTTP PROTOCOL VERBS
 */
-
 class API {
   constructor({ url }) {
     this.url = url;

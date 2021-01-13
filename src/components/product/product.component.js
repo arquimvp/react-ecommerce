@@ -6,29 +6,24 @@ import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
 import ShoppingCart from "@material-ui/icons/ShoppingCart";
 
-
 import "./product.styles.css";
 
 export default function Product({ product }) {
-
   return (
-    <Card className="collection-item">
-      <CardContent>
-        <img className="image" src={product.IMAGE} alt="product" style={{ width: "50%" }} />
-      </CardContent>
-      <CardContent className="collection-footer">
-        <Typography variant="body2" color="textSecondary" >
+    <Card className="collection-card">
+      <img
+        src={product.IMAGE}
+        alt="product"
+        className="collection-card__image"
+      />
+      <CardContent className="collection-card__footer">
+        <Typography variant="body2" color="textSecondary">
           Descripcion: {product.DESCRIPTION}
         </Typography>
-        <Typography variant="body2" color="textSecondary" >
+        <Typography variant="body2" color="textSecondary">
           Precio: {product.PRICE}
         </Typography>
       </CardContent>
-      <CardActions disableSpacing>
-        <IconButton aria-label="share">
-          <ShoppingCart fontSize="large" />
-        </IconButton>
-      </CardActions>
     </Card>
   );
 }
