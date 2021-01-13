@@ -1,6 +1,7 @@
 const ProductsActionTypes = {
   GET_PRODUCTS: "GET_PRODUCTS",
   REMOVE_PRODUCT_FROM_PRODUCTS: "REMOVE_PRODUCT_FROM_PRODUCTS",
+  INCREASE_PAGE: "INCREASE_PAGE",
 };
 
 export default ProductsActionTypes;

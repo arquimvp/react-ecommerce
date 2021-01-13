@@ -2,6 +2,7 @@ import ProductsActionTypes from "./products.types";
 
 const INITIAL_STATE = {
   products: [],
+  page: 1,
 };
 
 export function productsReducer(state = INITIAL_STATE, action) {
@@ -17,6 +18,11 @@ export function productsReducer(state = INITIAL_STATE, action) {
         products: state.products.filter(
           (product) => product.ID !== action.payload.ID
         ),
+      };
+    case ProductsActionTypes.INCREASE_PAGE:
+      return {
+        ...state,
+        page: state.page + 1,
       };
     default:
       return state;

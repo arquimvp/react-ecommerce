@@ -57,14 +57,14 @@ export default function Header() {
             open={Boolean(anchorEl)}
             onClose={handleClose}
           >
-            <Link to="/shopping/watches">
+            <Link to="/shopping/reloj" params={{category: "reloj"}}>
               <MenuItem onClick={handleClose}>Watches</MenuItem>
             </Link>
-            <Link to="/shopping/shirts">
-              <MenuItem onClick={handleClose}>Shirts</MenuItem>
-            </Link>
-            <Link to="/shopping/videogames">
+            <Link to="/shopping/videojuego" params={{category: "videojuego"}}>
               <MenuItem onClick={handleClose}>Videogames</MenuItem>
+            </Link>
+            <Link to="/shopping/camisa" params={{category: "camisa"}}>
+              <MenuItem onClick={handleClose}>Shirts</MenuItem>
             </Link>
           </Menu>
         </Toolbar>

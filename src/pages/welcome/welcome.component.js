@@ -18,7 +18,7 @@ const WelcomePage = () => {
         Version 1.0
       </h2>
       
-      <Button variant="contained" color="primary" component={Link} to={'/shopping'}>Continuar</Button>
+      <Button variant="contained" color="primary" component={Link} to={'/shopping/camisa'}>Continuar</Button>
     </div>
   );
 };
